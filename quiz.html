@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Ultimate Personality Quiz</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet">
+    </head>
+    <body>
+        <div id="result"></div>
+        <div id="info">
+            <p>Welcome to the Ultimate Personality quiz. When you enter your favorite color, this &ldquo;quiz&rdquo; tells you about your fucking personality.</p> <p><input type="button" value="Play Again" onClick="window.location.href=window.location.href"></p>
+            <img src="travis.jpg" alt="drawing of Travis Vogt getting punched in the face">
+            <blockquote>
+                &ldquo;Sir, our analytics have shown that Travis Vogt really enjoys visiting our website.&rdquo;<br />
+                &ldquo;Fuck it all up.&rdquo;
+            </blockquote>
+            <p id="credit">Drawing by Alex Thomas. <br />Quiz designed &amp; written by Catherine Blake Smith.</p>
+        </div>
+        <script>
+            var msg;
+            var color = prompt('What is your favorite color?').toLowerCase();
+            
+            switch(color){
+                case 'purple':
+                    msg = "You're a pretentious fuckstick.";
+                    break;
+                    
+                case 'red':
+                    msg = "You're a shitheel with a short fuse.";
+                    break;
+                    
+                case 'blue':
+                    msg = "You're a prick. Plus you're bad at talking to people.";
+                    break;
+
+                case 'indigo':
+                    msg = "You are a mean person.";
+                    break;
+                    
+                case 'violet':
+                    msg = "You are a super mean person.";
+                    break;
+
+                case 'brown':
+                    msg = "You are a shitty friend.";
+                    break;
+                    
+                case 'black':
+                    msg = "You are empty inside.";
+                    break;
+                    
+                case 'orange':
+                    msg = "You're just the fucking worst.";
+                    break;
+                    
+                case 'yellow':
+                    msg = "You smile too much.";
+                    break;
+                    
+                case 'white':
+                    msg = "You swear too much.";
+                    break;  
+                    
+                case 'green':
+                    msg = "You're a terrible driver.";
+                    break;
+                    
+                case 'fuchsia':
+                    msg = "You're a dicklicker.";
+                    break;
+                    
+                case 'pink':
+                    msg = "You're pretty useless.";
+                    break;
+                    
+                case 'grey':
+                    msg = "You have a shitty sense of humor.";
+                case 'gray':
+                    msg = "You have a shitty sense of humor.";
+                    break;
+                    
+                default:
+                    msg = "You always make the wrong decisions."
+                    break;
+            }
+            
+            var el = document.getElementById('result').innerHTML = msg;
+    
+        </script>
+    </body>
+</html>
